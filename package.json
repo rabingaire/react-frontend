@@ -1,0 +1,11 @@
+{
+  "name": "react-frontend",
+  "version": "1.0.0",
+  "description": "This is a demo app using react and rails api as backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rabin Gaire",
+  "license": "MIT"
+}
