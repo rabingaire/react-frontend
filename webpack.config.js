@@ -1,11 +1,13 @@
-modules.exports = {
+var path = require('path');
+
+module.exports = {
     entry: './entry.js',
     output: {
-        path : __dirname,
+        path : path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     }, 
-    modules: {
-        loaders: [
+    module: {
+        rules: [
             {test: /\.css$/, use: 'style!css'},
             {
                 test: /\.(js|jsx)$/,
@@ -13,7 +15,7 @@ modules.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['env', 'es2015', 'stage-0', 'react'],
+                        presets: ['env', 'es2015', 'stage-0'],
                         plugins: ['transform-runtime']
                     }
                 }
