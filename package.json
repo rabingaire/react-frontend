@@ -4,8 +4,7 @@
   "description": "This is a demo app using react and rails api as backend.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --color --watch"
+    "start": "webpack-dev-server --watch --progress --color --config ./webpack.config.js"
   },
   "author": "Rabin Gaire",
   "license": "MIT",
