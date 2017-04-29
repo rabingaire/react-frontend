@@ -1,7 +1,6 @@
+import 'purecss/build/pure.css';
 import React from 'react';
 import { render } from 'react-dom';
-
-import './style.css';
 
 import { Main } from './components';
 
